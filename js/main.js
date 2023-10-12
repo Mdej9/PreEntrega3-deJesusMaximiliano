@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalElement = document.querySelector("#total");
     const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 
-    // Define los precios de los productos aquí
+    // precios de los productos
     const preciosProductos = {
         1: 10,
         2: 20,
         3: 30
     };
 
-    // Inicializar el carrito desde localStorage si existe
+    // Inicializar el carrito
     let carritoItems = JSON.parse(localStorage.getItem("carrito")) || [];
 
     // Función para renderizar el carrito
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             li.textContent = `Producto ${item.id} - Cantidad: ${item.cantidad}, Precio: $${precioTotal}`;
 
-            // Agregar un botón de eliminar
+            //botón de eliminar
             const botonEliminar = document.createElement("button");
             botonEliminar.textContent = "Eliminar";
             botonEliminar.addEventListener("click", () => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         totalElement.textContent = total;
     }
 
-    // Manejar el evento de agregar al carrito
+    // evento de agregar al carrito
     productos.forEach((producto, index) => {
         const botonAgregar = producto.querySelector(".agregar");
         const cantidadInput = producto.querySelector("input[type='number']");
