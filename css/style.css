@@ -1,66 +1,67 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
 }
 
 h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    color: #333;
+}
+
+#nameInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addName {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addName:hover {
+    background-color: #2980b9;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button {
-    cursor: pointer;
-}
-
-#carrito {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#carrito li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-#carrito button {
-    background-color: #e74c3c;
-    border: none;
-    color: #fff;
     padding: 5px 10px;
-    border-radius: 3px;
+    font-size: 14px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
     cursor: pointer;
-    font-size: 0.8em;
 }
 
-#carrito button:hover {
+button:hover {
     background-color: #c0392b;
 }
 
-#vaciar-carrito {
-    background-color: #3498db;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px;
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
 }
 
-#vaciar-carrito:hover {
-    background-color: #2980b9;
+/* Añadido para resaltar nombres que coinciden con la búsqueda */
+li.match {
+    background-color: #c8ffc8;
 }
