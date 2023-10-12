@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <h1>Productos</h1>
+    <ul id="productos">
+        <li data-id="1">Producto 1 - $10 <input type="number" min="1" value="1"><button class="agregar">Agregar al carrito</button></li>
+        <li data-id="2">Producto 2 - $20 <input type="number" min="1" value="1"><button class="agregar">Agregar al carrito</button></li>
+        <li data-id="3">Producto 3 - $30 <input type="number" min="1" value="1"><button class="agregar">Agregar al carrito</button></li>
+    </ul>
+
+    <h1>Carrito de Compras</h1>
+    <ul id="carrito">
+    </ul>
+
+    <p>Total: $<span id="total">0</span></p>
+
+    <!-- Botón para vaciar el carrito -->
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
